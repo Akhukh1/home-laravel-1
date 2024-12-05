@@ -15,9 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string(column: 'title')->default(value: 'Группа FS-01');
             $table->string(column: 'start_from')->default(value: '2023-01-10');
-            $table->boolean(column: 'is_active')->default(true);
-            $table->string(column: 'created_at')->default(value: '2023-01-01 10:00:00');
-            $table->string(column: 'updated_at')->default(value: '2023-01-01 10:00:00');
+            $table->boolean(column: 'is_active')->default(value: true);
             $table->timestamps();
         });
     }
